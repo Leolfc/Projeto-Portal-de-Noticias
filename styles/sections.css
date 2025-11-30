@@ -11,13 +11,14 @@ section header {
       width: 16px;
       height: 16px;
     }
-    &:hover span{
-color: blue;
+    &:hover span {
+      color: blue;
     }
   }
 }
 
 #featured {
+  grid-area: featured;
   img {
     height: 100%;
     object-fit: cover;
@@ -48,22 +49,50 @@ color: blue;
   }
 }
 #weekly {
+  grid-area: weekly;
   & > div {
     grid-template-columns: repeat(4, 292px);
   }
   img {
     height: 160px;
   }
-  figure{
+  figure {
     position: relative;
   }
-  .content-tag{
+  .content-tag {
     position: absolute;
-    top:8px;
-    left:8px;
+    top: 8px;
+    left: 8px;
   }
-  p{
+  p {
     margin-top: 8px;
     font-weight: 800;
+  }
+}
+
+#ai {
+  grid-area: ai;
+  img {
+    width: 176px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  h3 {
+    margin-block: 8px 4px;
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+#more {
+  img {
+    margin-top: 32px;
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  h3 {
+    margin-top: 8px;
   }
 }
