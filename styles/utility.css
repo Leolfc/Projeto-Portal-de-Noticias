@@ -1,7 +1,15 @@
 .grid {
   display: grid;
 }
-
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -18,13 +26,13 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
+
 .gap-16 {
   gap: 16px;
 }
 
 .text-2xl {
-  font:var(--h1)
-  
+  font: var(--h1);
 }
 
 .text-xl {
@@ -37,6 +45,6 @@ img {
   font: var(--text-sm);
 }
 
-.gap-32{
-  gap:32px
+.gap-32 {
+  gap: 32px;
 }
