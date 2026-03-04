@@ -3,7 +3,6 @@
 }
 @media screen and (max-width: 600px) {
   .grid {
-    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
@@ -12,6 +11,15 @@
 }
 .grid-flow-col {
   grid-auto-flow: column;
+}
+@media screen and (max-width: 600px) {
+  .grid-flow-col {
+   display: flex;
+   flex-direction: column;
+  }
+  strong, span{
+   display: none;
+  }
 }
 
 img {
