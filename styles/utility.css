@@ -1,25 +1,9 @@
 .grid {
   display: grid;
 }
-@media screen and (max-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-}
+
 .grid-flow-col {
   grid-auto-flow: column;
-}
-@media screen and (max-width: 600px) {
-  .grid-flow-col {
-   display: flex;
-   flex-direction: column;
-  }
-  strong, span{
-   display: none;
-  }
 }
 
 img {
@@ -55,4 +39,22 @@ img {
 
 .gap-32 {
   gap: 32px;
+}
+@media screen and (max-width: 600px) {
+    .grid {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:10px;
+   align-items: center;
+  }
+  .grid-flow-col {
+   display: flex;
+   flex-direction: column;
+  }
+  strong, span{
+   display: none;
+  }
+ 
+ 
 }

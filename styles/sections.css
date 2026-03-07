@@ -52,19 +52,6 @@ section header {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .card{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-
-  }
- .card:nth-child(1){
-  display:grid;
-  grid-template-rows: repeat(2, 1fr);
-
- }
-
-}
 
 #weekly {
   grid-area: weekly;
@@ -87,12 +74,6 @@ section header {
     font-weight: 800;
   }
  
-}
-@media screen and (max-width: 600px){
-  #weekly{
-   overflow: scroll;
-   
-  }
 }
 
   
