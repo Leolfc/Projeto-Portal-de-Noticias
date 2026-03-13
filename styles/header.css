@@ -25,10 +25,11 @@ margin-inline: auto;
 @media screen and (max-width:600px){
   #secondary{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     justify-content: space-between;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     text-align: center;
+    align-items: center;
+    justify-content: center;;
    row-gap: 20px;
     
   }

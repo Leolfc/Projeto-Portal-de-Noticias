@@ -63,6 +63,17 @@ h3 {
     display: grid;
    
   }
+.gap-32{
+& div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px auto;
+
+}
+}
 }
 
 main {
